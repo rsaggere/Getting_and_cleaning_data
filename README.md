@@ -1,6 +1,10 @@
 # Getting_and_cleaning_data
 ## Project Work
 
+A full description of this project is available at the below URL: 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 The R script "run_analysis.R" reads several files and generates 1 tidy data set as a output file.
 
 The data for this project is available at the URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
