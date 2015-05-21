@@ -18,29 +18,23 @@ An identifier of the subject who carried out the experiment.
 
 The R script can be divided into 5 high level sections. Each section is described below:
 
-Section 1. Merge the training and the test sets to create one data set.
+        Read the various data files into respective data frames
 
-After setting the source directory for the files, read into tables the data located in
+        Assign column names to data frames
 
-features.txt
-activity_labels.txt
-subject_train.txt
-x_train.txt
-y_train.txt
-subject_test.txt
-x_test.txt
-y_test.txt
-Assign column names and merge to create one data set.
+        Combines all data frames into one
+        
+        Search and extract only the measurements on the mean & std for each measurement 
 
-Section 2. Use the "grep" function to search and extract only the measurements on the mean and standard deviation for each measurement.
+        Combine these columns into a new data frame along with subject_id & activity_id
+        
+        Include textual description for activity_id
+        
+        Using the melt function convert data frame from long format to short format
+        
+        Using sqldf function, calculate the average value by actitity,subject,variable
+        
+        Using dcast function, convert the data fram from short to long format
+        
+        Write contents to file
 
-
-Section 3. Use descriptive activity names to name the activities in the data set
-
-Merge data subset with the activityType table to cinlude the descriptive activity names
-
-Section 4. Appropriately label the data set with descriptive activity names.
-
-Use gsub function for pattern replacement to clean up the data labels.
-
-Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
