@@ -16,7 +16,7 @@ A 561-feature vector with time and frequency domain variables.
 Its activity label.
 An identifier of the subject who carried out the experiment.
 
-The R script can be divided into 5 high level sections. Each section is described below:
+The R script can be divided into below high level sections. Each section is described below:
 
         Read the various data files into respective data frames
 
